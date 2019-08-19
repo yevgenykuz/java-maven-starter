@@ -1,12 +1,8 @@
 package me.yevgeny;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Properties;
-
-import static me.yevgeny.Main.TEMP_PROPERTIES_FILE_NAME;
-import static me.yevgeny.Main.loadPropertiesFromFile;
+import static me.yevgeny.Main.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
@@ -18,12 +14,12 @@ class MainTest {
 
     @Test
     void shouldBeTrue() {
+        main(null);
         assertThat(true, is(true));
     }
 
     @Test
     void shouldHaveTempProperty() {
-        Properties properties = loadPropertiesFromFile(TEMP_PROPERTIES_FILE_NAME);
-        assertThat(properties.isEmpty(), is(false));
+        assertThat(loadPropertiesFromFile(TEMP_PROPERTIES_FILE_NAME).isEmpty(), is(false));
     }
 }
