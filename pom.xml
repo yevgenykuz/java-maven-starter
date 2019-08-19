@@ -137,6 +137,20 @@
                 <version>2.22.1</version>
             </plugin>
 
+            <!-- codecov coverage integration -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <check/>
+                </configuration>
+            </plugin>
+
             <!-- build a single executable JAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
