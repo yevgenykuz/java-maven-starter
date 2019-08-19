@@ -38,15 +38,15 @@ Authors
 License
 -------
 
-`MIT License <https://github.com/yevgenykuz//java-maven-starter/blob/master/LICENSE>`_
+`MIT License <https://github.com/yevgenykuz/java-maven-starter/blob/master/LICENSE>`_
 
 
 -----
 
-.. _logback.xml: https://github.com/yevgenykuz//java-maven-starter/blob/master/src/main/resources/logback.xml
-.. _pom.xml: https://github.com/yevgenykuz//java-maven-starter/blob/master/pom.xml
-.. _travis.yml: https://github.com/yevgenykuz//java-maven-starter/blob/master/.travis.yml
-.. _temp.properties: https://github.com/yevgenykuz//java-maven-starter/blob/master/src/main/resources/temp.properties
+.. _logback.xml: https://github.com/yevgenykuz/java-maven-starter/blob/master/src/main/resources/logback.xml
+.. _pom.xml: https://github.com/yevgenykuz/java-maven-starter/blob/master/pom.xml
+.. _travis.yml: https://github.com/yevgenykuz/java-maven-starter/blob/master/.travis.yml
+.. _temp.properties: https://github.com/yevgenykuz/java-maven-starter/blob/master/src/main/resources/temp.properties
 
 .. |travis_ci| image:: https://travis-ci.org/yevgenykuz/java-maven-starter.svg?branch=master
     :target: https://travis-ci.org/yevgenykuz/java-maven-starter
