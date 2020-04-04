@@ -1,12 +1,16 @@
 package me.yevgeny;
 
-import org.junit.jupiter.api.Test;
-
-import static me.yevgeny.Main.*;
+import static me.yevgeny.Main.TEMP_PROPERTIES_FILE_NAME;
+import static me.yevgeny.Main.loadPropertiesFromFile;
+import static me.yevgeny.Main.main;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
+import org.junit.jupiter.api.Test;
+
 /**
+ * Main class tests template.
+ *
  * @author Yevgeny Kuznetsov
  * @since 1.0.0, 19 August 2019
  **/
