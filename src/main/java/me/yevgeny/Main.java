@@ -28,7 +28,7 @@ public class Main {
         try (InputStream resourceAsStream = Main.class.getClassLoader().getResourceAsStream(fileName)) {
             properties.load(resourceAsStream);
         } catch (IOException e) {
-            logger.error("Unable to load properties file1: " + fileName);
+            logger.error("Unable to load properties file: " + fileName);
         }
 
         return properties;

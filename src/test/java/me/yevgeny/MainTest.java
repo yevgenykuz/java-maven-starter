@@ -18,7 +18,7 @@ class MainTest {
 
     @Test
     void shouldBeTrue() {
-        main(null);
+        main(new String[0]);
         assertThat(true, is(true));
     }
 
