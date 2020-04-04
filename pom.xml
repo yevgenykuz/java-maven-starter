@@ -42,8 +42,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-    <logback.version>1.2.3</logback.version>
-    <junit.jupiter.version>5.5.1</junit.jupiter.version>
   </properties>
 
   <dependencies>
@@ -51,19 +49,19 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>${logback.version}</version>
+      <version>1.2.3</version>
     </dependency>
     <!-- Testing -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>${junit.jupiter.version}</version>
+      <version>5.6.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-library</artifactId>
-      <version>2.1</version>
+      <version>2.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -130,7 +128,7 @@
       <!-- JUnit 5 requires Surefire version 2.22.1 or higher -->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.1</version>
+        <version>2.22.2</version>
       </plugin>
       <!-- codecov coverage integration -->
       <plugin>
