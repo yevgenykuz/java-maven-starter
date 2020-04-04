@@ -21,7 +21,7 @@ This starter includes:
 * **Executable jar creation** - See maven-shade-plugin plugin section in pom.xml_
 * **Travis CI with codecov template** - Basic travis CI configuration with codecov - see travis.yml_
 * **Basic maven profiles with parameter injection** - See temp.properties_ and pom.xml_
-* **GitHub templates** - See `.github folder`_ and *.md files in root folder
+* **GitHub templates** - See `.github folder`_ and .md files in root folder
 
 Usage
 =====
