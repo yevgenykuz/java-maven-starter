@@ -1,8 +1,5 @@
 package me.yevgeny;
 
-import static me.yevgeny.Main.TEMP_PROPERTIES_FILE_NAME;
-import static me.yevgeny.Main.loadPropertiesFromFile;
-import static me.yevgeny.Main.main;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
@@ -14,16 +11,17 @@ import org.junit.jupiter.api.Test;
  * @author Yevgeny Kuznetsov
  * @since 1.0.0, 19 August 2019
  **/
-class MainTest {
+public class MainTest {
 
     @Test
-    void shouldBeTrue() {
-        main(new String[0]);
-        assertThat(true, is(true));
+    public void shouldBeTrue() {
+        Main.main(new String[0]);
+        assertThat("true is not true", true, is(true));
     }
 
     @Test
-    void shouldHaveTempProperty() {
-        assertThat(loadPropertiesFromFile(TEMP_PROPERTIES_FILE_NAME).isEmpty(), is(false));
+    public void shouldHaveTempProperty() {
+        assertThat("System property is missing", Main.loadPropertiesFromFile(Main.PROPERTIES_FILE).isEmpty(),
+                is(false));
     }
 }

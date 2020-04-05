@@ -12,25 +12,36 @@ import org.slf4j.LoggerFactory;
  * @author Yevgeny Kuznetsov
  * @since 1.0.0, 19 August 2019
  **/
-public class Main {
+public final class Main {
 
-    static final String TEMP_PROPERTIES_FILE_NAME = "temp.properties";
-    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    public static final String PROPERTIES_FILE = "temp.properties";
+    private static final Logger LOG = LoggerFactory.getLogger(Main.class);
 
-    public static void main(String[] args) {
-        Properties properties = loadPropertiesFromFile(TEMP_PROPERTIES_FILE_NAME);
-        properties.forEach((k, v) -> logger.info(k + "=" + v));
+    public static void main(final String[] args) {
+        final Properties properties = loadPropertiesFromFile(PROPERTIES_FILE);
+        properties.forEach((k, v) -> LOG.info(k + "=" + v));
     }
 
-    static Properties loadPropertiesFromFile(String fileName) {
-        Properties properties = new Properties();
+    /**
+     * Loads properties from provided file.
+     *
+     * @param fileName The file to load the properties from
+     * @return The loaded properties
+     */
+    public static Properties loadPropertiesFromFile(final String fileName) {
+        final Properties properties = new Properties();
 
-        try (InputStream resourceAsStream = Main.class.getClassLoader().getResourceAsStream(fileName)) {
+        try (InputStream resourceAsStream = Thread.currentThread().getContextClassLoader()
+                .getResourceAsStream(fileName)) {
             properties.load(resourceAsStream);
         } catch (IOException e) {
-            logger.error("Unable to load properties file: " + fileName);
+            LOG.error("Unable to load properties file: " + fileName);
         }
 
         return properties;
+    }
+
+    private Main() {
+        // This class shouldn't be instantiated
     }
 }

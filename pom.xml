@@ -172,7 +172,7 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.1.1</version>
         <configuration>
-          <configLocation>checkstyle.xml</configLocation>
+          <configLocation>tools/checkstyle.xml</configLocation>
           <consoleOutput>true</consoleOutput>
           <violationSeverity>warning</violationSeverity>
           <failsOnError>true</failsOnError>
@@ -184,6 +184,30 @@
             <phase>validate</phase>
             <goals>
               <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- PMD checks -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <rulesets>
+            <ruleset>tools/pmd-ruleset.xml</ruleset>
+          </rulesets>
+          <includeTests>true</includeTests>
+          <verbose>true</verbose>
+          <linkXRef>false</linkXRef>
+        </configuration>
+        <executions>
+          <execution>
+            <id>test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>check</goal>
+              <goal>cpd-check</goal>
             </goals>
           </execution>
         </executions>
