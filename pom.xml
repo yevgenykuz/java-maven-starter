@@ -227,6 +227,14 @@
         <version>4.0.0</version>
         <configuration>
           <includeTests>true</includeTests>
+          <effort>max</effort>
+          <plugins>
+            <plugin>
+              <groupId>com.h3xstream.findsecbugs</groupId>
+              <artifactId>findsecbugs-plugin</artifactId>
+              <version>1.10.1</version>
+            </plugin>
+          </plugins>
         </configuration>
         <executions>
           <execution>
