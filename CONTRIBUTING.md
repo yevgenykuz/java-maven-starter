@@ -10,7 +10,7 @@ If you can't find an answer, please open an issue.
 Bugs can be reported by opening an issue.  
 Please provide as much information as possible. Ideally, that would include a small sample project that reproduces the problem.
 
-## Fixing Bugs, Adding Enchancements, Features and Documentation
+## Fixing Bugs, Adding Enhancements, Features and Documentation
 Code and documentation can be contributed by replying to an open issue to get it assigned to you, or by creating a new issue.  
 **Please make sure you get a response from one of the maintainers before you start working.**  
 You can find instructions on building the project in [README.md][2].  
@@ -18,7 +18,7 @@ The code style is defined in Intellij project files in the repo and also by the 
 *If you can't get the style checks to pass, feel free to put up your pull request anyway and project maintainers can help you fix the style issues.*
 
 ## Issue Labels
-Issue lables will be assigned by the project maintainers.  
+Issue labels will be assigned by the project maintainers.  
 Here are the current labels:
 
  * **bug**: Something isn't working

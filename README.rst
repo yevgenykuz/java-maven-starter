@@ -16,8 +16,8 @@ Features
 
 This starter includes:
 
-* **Logback**  - Console and rotating file logging - see `logback.xml`_
-* **Junit 5 + hamcrest**  - Testing frameworks
+* **Logback** - Console and rotating file logging - see `logback.xml`_
+* **Junit 5 + hamcrest** - Testing frameworks
 * **Executable jar creation** - See maven-shade-plugin plugin section in `pom.xml`_
 * **Travis CI with codecov template** - Basic travis CI configuration with codecov - see `travis.yml`_
 * **Basic maven profiles with parameter injection** - See `temp.properties`_ and `pom.xml`_
