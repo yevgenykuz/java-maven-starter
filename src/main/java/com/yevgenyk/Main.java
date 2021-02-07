@@ -1,4 +1,4 @@
-package me.yevgeny;
+package com.yevgenyk;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -22,7 +22,7 @@
     </encoder>
   </appender>
 
-  <logger name="me.yevgeny" level="debug" additivity="false">
+  <logger name="com.yevgenyk" level="debug" additivity="false">
     <appender-ref ref="console"/>
     <appender-ref ref="file_rolling"/>
   </logger>
