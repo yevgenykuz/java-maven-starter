@@ -26,5 +26,11 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build with Maven
         run: mvn -B install --file pom.xml
-      - name: Report code coverage to codecov
-        uses: codecov/codecov-action@v1
+        
+      - name: Publish test coverage results
+        uses: PavanMudigonda/jacoco-reporter@v4.5
+        with:
+          coverage_results_path: 'target/site/jacoco/jacoco.xml'
+          coverage_report_title: 'Test coverage results'
+          coverage_report_name: 'Test coverage results'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
