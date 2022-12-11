@@ -8,8 +8,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java_version: [1.8, 11, 16]
-        os: [windows-latest, macOS-latest, ubuntu-latest]
+        java_version: [16]
+        os: [ubuntu-latest]
 
     steps:
       - name: Checkout
@@ -28,7 +28,7 @@ jobs:
         run: mvn -B install --file pom.xml
         
       - name: Publish test coverage results
-        uses: PavanMudigonda/jacoco-reporter@v4.5
+        uses: PavanMudigonda/jacoco-reporter@v4.8
         with:
           coverage_results_path: 'target/site/jacoco/jacoco.xml'
           coverage_report_title: 'Test coverage results'
