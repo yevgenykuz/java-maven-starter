@@ -1,6 +1,6 @@
 name: All JDKs on all OSs
 
-on: [push, pull_request]
+on: [workflow_dispatch]
 
 jobs:
   build:
