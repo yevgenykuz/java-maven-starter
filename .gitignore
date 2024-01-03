@@ -2,6 +2,7 @@
 .idea/*
 !.idea/codeStyles/
 *.iml
+.vscode/*
 
 # Java compiled/packaged files
 target/
@@ -11,3 +12,6 @@ dependency-reduced-pom.xml
 
 # Logs:
 logs/
+
+# OS:
+.DS_Store
