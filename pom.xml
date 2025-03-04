@@ -109,7 +109,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.13.0</version>
+        <version>3.14.0</version>
       </plugin>
       <!-- Show active profiles on the compile phase -->
       <plugin>
